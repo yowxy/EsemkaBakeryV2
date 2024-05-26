@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        app:navigationIcon="@drawable/btn_bacl"
+        app:titleTextColor="@color/white"
+        android:background="@color/btn_singn"
+        app:title="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/search_page"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text"
+                android:hint="Search Cake"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:backgroundTint="@color/btn_singn"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
+        android:id="@+id/search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+  </LinearLayout>
+
+</LinearLayout>
